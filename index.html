@@ -1,0 +1,64 @@
+      <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Pontos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-logo">
+      <img src="logo.png" alt="Logo da Barbearia" class="logo-barbearia">
+      <h1>Consulta de Pontos</h1>
+    </div>
+
+    <div id="buscaCliente">
+      <input type="text" id="nomeCliente" placeholder="Digite seu nome completo" />
+      <button onclick="buscarDados()">Consultar</button>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+
+    <!-- Campo de senha (aparece se digitar "admin") -->
+    <div id="campoSenhaADM" style="display: none; margin-top: 20px;">
+      <input type="password" id="senhaADM" placeholder="Digite a senha para acessar">
+      <button onclick="validarSenhaADM()">Entrar</button>
+    </div>
+
+    <!-- TABELA DE TROCAS -->
+    <div id="areaPremios" style="display: none;">
+      <h2>🎁 Prêmios Disponíveis para Troca</h2>
+      <table id="tabelaTrocas">
+        <thead>
+          <tr>
+            <th>Produto/Serviço</th>
+            <th>Pontos Necessários</th>
+            <th>Disponível</th>
+          </tr>
+        </thead>
+        <tbody id="corpoTabelaTrocas"></tbody>
+      </table>
+    </div>
+
+    <!-- ÁREA ADMINISTRATIVA -->
+    <div id="painelADM" class="painel-adm" style="display:none;">
+      <h3>Área Administrativa</h3>
+      <div id="formularioADM" style="display:none;">
+        <h4>Adicionar novo item</h4>
+        <input type="text" id="produtoNome" placeholder="Nome do produto/serviço">
+        <input type="number" id="produtoPontos" placeholder="Pontos necessários">
+        <select id="produtoDisponivel">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <button onclick="adicionarItem()">Adicionar</button>
+
+        <h4>Lista de Itens Cadastrados</h4>
+        <ul id="listaADM"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

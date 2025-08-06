@@ -1,0 +1,110 @@
+body {
+  background-color: #0a1d3a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  color: #0a1d3a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #d4af37;
+  color: #0a1d3a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #c79c26;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.resultado-card {
+  background-color: #f5f5f5;
+  color: #0a1d3a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  text-align: left;
+}
+
+.resultado-card p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #0a1d3a;
+  color: white;
+}
+
+.painel-adm {
+  background: #fff;
+  color: #0a1d3a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  margin-top: 20px;
+}
+
+.painel-adm input, .painel-adm select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+.titulo-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  margin-bottom: 10px;
+}
+
+.logo-barbearia {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
